@@ -1,7 +1,5 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  bool = position_taken?(board, index)
-  puts bool
   if (index.between?(0,8) && bool == false)
     return true
   end
@@ -17,7 +15,3 @@ def position_taken?(board, index)
     return true
   end
 end
-
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-index = 4
-valid_move?(board, index)
